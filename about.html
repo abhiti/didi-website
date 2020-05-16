@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <style>
-@font-face {
-    font-family: 'alegreya_sansthin';
-    src: url('alegreyasans-thin-webfont.woff2') format('woff2'),
-         url('alegreyasans-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 .header{
   display: flex;
@@ -18,7 +12,8 @@
   margin: 1em;
   background-color:#0f0f1a;
   color:#fbc5a2;
-  font-family:alegreya_sansthin;
+  font-family:'Gill Sans MT Book';
+  font-weight:normal;
 
 }
 .header .name{
@@ -53,16 +48,17 @@
 .body {
   background-color:#0f0f1a;
   color:#fbc5a2;
-  font-family:alegreya_sansthin;
+  font-family:'Gill Sans MT Book';
+  font-weight:normal;
 }
 
 .main-container{
   display: flex;
   width: 100%;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
-  font-size: 30px;
+  font-size: 20px;
   justify-content: space-around;
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -73,13 +69,17 @@
 }
 
 .main-container .bio{
-  display: flex;
   flex-direction: column;
   margin: 2%;
   align-content: center;
-
+  text-align:left;
 }
 
+.main-container .bio a{
+  padding: 0%;
+  color:#ff8047;
+  white-space: nowrap;
+}
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
@@ -132,6 +132,8 @@ a:hover {
 <html>
 <head>
   <title>kvaish - about</title>
+  <link rel="stylesheet" type="text/css"
+        href="gill-sans-mt-cufonfonts-webfont/style.css"/>
 </head>
 <div class="header">
   <div class="name">
@@ -144,28 +146,39 @@ a:hover {
     <a href="about.html" style="color:#ff8047;"> <h2>about</h2> </a>
   </div>
   <div class="name">
-    <a href="portfolio.html"> <h2>portfolio</h2> </a>
+    <a href="writing.html"> <h2>writing</h2> </a>
   </div>
   <div class="name">
     <a href="resume.html"> <h2>resume</h2> </a>
   </div>
   <div class="name">
+    <a href="press.html"> <h2>press</h2> </a>
+  </div>
+  <div class="name">
     <a href="contact.html"> <h2>contact</h2> </a>
   </div>
 </div>
-<body style="background-color:#0f0f1a;color:#fbc5a2;font-family:alegreya_sansthin;">
-
-
-
-  <div class="main-container" style="font-family:alegreya_sansthin;text-align:right;">
+<body style="background-color:#0f0f1a;color:#fbc5a2;font-family:'Gill Sans MT Book';font-weight:normal;">
+  <div class="main-container" style="font-family:'Gill Sans MT Book';font-weight:normal;text-align:right;">
 
 
       <div class="bio">
-        <b>i like to write</b>
-        [describes life using each lamp]
+        Hi! My name is Kanika Asavari Vaish (she/her/hers), and I'm a writer, director, actor, and stand-up comedian. I was born in New York, and spent my middle and high school years in Mumbai, India. <br><br>
+
+        I studied English and Political Science at Wellesley College, where I had the pleasure of acting in several Shakespeare productions and directing Rajiv Joseph's <i>Bengal Tiger at the Baghdad Zoo</i> and <i>Guards at the Taj</i>. My senior thesis, a collective of short stories entitled Jet Lag, advised by poet Octavio Gonzalez, won the Charlotte Paul Reese '38 Memorial Prize for Creativity in a Collection of Short Fiction. <br><br>
+
+        After Wellesley, I moved to Washington, D.C., where I spent two wildly busy years working at an international arbitration law firm, an experience which inspired my comedic play <i>Charles B. Meyer v. The Republic of Malaysia</i>.<br><br>
+
+        I'm currently a first-year playwriting/TV writing student at Columbia School of the Arts, under the tutelage of David Henry Hwang, Lynn Nottage, Rogelio Martinez, and Matthew Fennell.<br><br>
+
+        I'm also the co-founder of <a href="https://www.instagram.com/freshlimesodaco/">Fresh Lime Soda Productions</a>, a contemporary South Asian theater ensemble based in NYC.<br><br>
+
+        I write about impressionable youth, ghosts, nostalgia, modern love, intergenerational dynamics, and my Indian heritage, and I'm passionate about creating work for queer, trans, and differently-abled artists and audiences of color.<br><br>
+
+        If you'd like to get to know my work better or collaborate on a project, please feel free to <a href="mailto:kanikavaish@gmail.com">reach out</a>.<br><br>
       </div>
       <br> <br>
-    <img src="aboutimage.jpg" style="width:30%">
+    <img src="headshot3.JPG" style="width:30%">
   </div>
   <br><br>
 </body>
