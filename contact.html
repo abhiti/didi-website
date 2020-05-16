@@ -75,6 +75,17 @@
 
 }
 
+
+#email {
+   background-image: url('email_peach.png');
+   height: 225px;
+   width: 410px;
+}
+
+#email:hover {
+   background-image: url('email_orange.png');
+}
+
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
@@ -163,18 +174,34 @@ a:hover {
       <div class="bio">
         let's connect!<br><br><br><br>
         <div class="main-container">
-        <a href="mailto:kanikavaish@gmail.com"style="width:20%">
-          <img src="email.png" style="width:30%">
+
+          <a href="mailto:kanikavaish@gmail.com"style="width:20%">
+              <img src='email_peach.png' style="width:30%" onmouseover="this.src='email_orange.png';" onmouseout="this.src='email_peach.png';" />
+          </a>
+
+          <a href="https://www.instagram.com/kvaish/" style="width:20%">
+            <img src='insta_orange.png' style="width:30%" onmouseover="this.src='insta_peach.png';" onmouseout="this.src='insta_orange.png';" />
+          </a>
+          <a href="https://twitter.com/kanikaasavari" style="width:20%">
+            <img src='twitter_peach.png' style="width:30%" onmouseover="this.src='twitter_orange.png';" onmouseout="this.src='twitter_peach.png';" />
+          </a>
+          <a href="https://www.linkedin.com/in/kanika-vaish/" style="width:20%">
+            <img src='linkedin_orange.png' style="width:30%" onmouseover="this.src='linkedin_peach.png';" onmouseout="this.src='linkedin_orange.png';" />
+          </a>
+
+
+        <!-- <a href="mailto:kanikavaish@gmail.com"style="width:20%">
+          <img src="email_peach.png" style="width:30%">
         </a>
         <a href="https://www.instagram.com/kvaish/" style="width:20%">
           <img src="insta.png" style="width:30%">
         </a>
         <a href="https://twitter.com/kanikaasavari" style="width:20%">
-          <img src="twitter.png" style="width:30%">
+          <img src="twitter-orange.png" style="width:30%">
         </a>
         <a href="https://www.linkedin.com/in/kanika-vaish/" style="width:20%">
           <img src="linkedin.png" style="width:30%">
-        </a>
+        </a> -->
       </div>
 
 
