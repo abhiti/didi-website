@@ -56,7 +56,7 @@
   width: 100%;
   height: 100%;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 30px;
   justify-content: space-around;
 
@@ -67,12 +67,23 @@
   animation: fadein 2s;
 }
 
-.main-container .item{
+.main-container .bio{
   display: flex;
   flex-direction: column;
   margin: 2%;
   align-content: center;
 
+}
+
+
+#email {
+   background-image: url('email_peach.png');
+   height: 225px;
+   width: 410px;
+}
+
+#email:hover {
+   background-image: url('email_orange.png');
 }
 
 /* Firefox < 16 */
@@ -113,6 +124,8 @@ a:link {
   color:#fbc5a2;
   text-decoration:none;
 }
+
+
 a:visited {
   padding: 12px;
   color:#fbc5a2;
@@ -123,26 +136,10 @@ a:hover {
   color: #ff8047;
 }
 
-.model-box {
-  position:   relative;
-  width:      65%;
-  height: 0;
-padding-top:   80%; /* This is your aspect ratio */ }
-
-.model {
-  position: absolute;
-  top:      0;
-  left:     0;
-  bottom:   0;
-  right:    0;
-  width:    100%;
-  height:   100%
-}
-
 </style>
 <html>
 <head>
-  <title>kvaish - resume</title>
+  <title>kvaish - gallery</title>
   <link rel="stylesheet" type="text/css"
         href="gill-sans-mt-cufonfonts-webfont/style.css"/>
 </head>
@@ -160,30 +157,52 @@ padding-top:   80%; /* This is your aspect ratio */ }
     <a href="writing.html"> <h2>writing</h2> </a>
   </div>
   <div class="name">
-    <a href="directing.html"> <h2>directing</h2> </a>
-  </div>
-  <div class="name">
-    <a href="resume.html" style="color:#ff8047;"> <h2>resume</h2> </a>
+    <a href="resume.html"> <h2>resume</h2> </a>
   </div>
   <div class="name">
     <a href="press.html"> <h2>press</h2> </a>
   </div>
   <div class="name">
-    <a href="contact.html"> <h2>contact</h2> </a>
+    <a href="contact.html"  style="color:#ff8047;"> <h2>contact</h2> </a>
   </div>
 </div>
-<body style="background-color:#0f0f1a;color:#fbc5a2;font-family:'Gill Sans MT Book';font-weight:normal;">
-
-
+<body style="background-color:#0f0f1a;color:#fbc5a2;font-family:'Gill Sans MT Book';font-weight:normal;" onload="myFunction()">
 
   <div class="main-container" style="font-family:'Gill Sans MT Book';font-weight:normal;text-align:center;">
-    <!-- <iframe src="Vaish_Resume4.pdf" style="height:1100px;width:800px;"></iframe> -->
-    <div class="model-box">
-      <iframe class="model" src="Vaish_Website Resume (Updated March 2021) GENERAL ADMIN.pdf" frameborder="0" allowfullscreen=""></iframe>
-    </div>
 
 
-    <!-- <iframe src="Vaish_Resume4.pdf#zoom=50"></iframe> -->
+      <div class="bio">
+        <script>
+        function myFunction() {
+          // var fs = require('fs');
+          // var files = fs.readdirSync('gallery-images');
+          // console.log(files);
+          console.log("hi");
+}
+        </script>
+        <script src='dir.php'></script>
+        <!-- let's connect!<br><br><br><br>
+        <div class="main-container">
+
+          <a href="mailto:kanikavaish@gmail.com"style="width:20%">
+              <img src='email_peach.png' style="width:30%" onmouseover="this.src='email_orange.png';" onmouseout="this.src='email_peach.png';" />
+          </a>
+
+          <a href="https://www.instagram.com/kvaish/" style="width:20%">
+            <img src='insta_orange.png' style="width:30%" onmouseover="this.src='insta_peach.png';" onmouseout="this.src='insta_orange.png';" />
+          </a>
+          <a href="https://twitter.com/kanikaasavari" style="width:20%">
+            <img src='twitter_peach.png' style="width:30%" onmouseover="this.src='twitter_orange.png';" onmouseout="this.src='twitter_peach.png';" />
+          </a>
+          <a href="https://www.linkedin.com/in/kanika-vaish/" style="width:20%">
+            <img src='linkedin_orange.png' style="width:30%" onmouseover="this.src='linkedin_peach.png';" onmouseout="this.src='linkedin_orange.png';" />
+          </a> -->
+
+      </div>
+
+
+      </div>
+      <br> <br>
 
   </div>
   <br><br>

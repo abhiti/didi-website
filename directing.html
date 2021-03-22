@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<style>
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: inherit;
+  height: inherit;
+  margin: 1em;
+  background-color:#0f0f1a;
+  color:#fbc5a2;
+  font-family:'Gill Sans MT Book';
+  font-weight:normal;
+
+}
+.header .name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  height: fit-content;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 33%;
+  height: inherit;
+}
+.header .logo a{
+  display: flex;
+  width: 12%;
+  height: auto;
+  padding: 0;
+}
+.header .logo img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+
+.body {
+  background-color:#0f0f1a;
+  color:#fbc5a2;
+  font-family:'Gill Sans MT Book';
+  font-weight:normal;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.main-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22px;
+  justify-content: center;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+.main-container .item{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 65%;
+
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.main-container img{
+  margin: 2%;
+}
+
+.main-container .gallery img{
+  height: 50vh;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  line-height: 0.5em;
+  align-items: center;
+}
+
+/* img {
+  width: 20%;
+
+} */
+a:link {
+  padding: 12px;
+  color:#fbc5a2;
+  text-decoration:none;
+}
+a:visited {
+  padding: 12px;
+  color:#fbc5a2;
+  text-decoration:none;
+}
+
+a:hover {
+  color: #ff8047;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* i {
+  white-space: nowrap
+} */
+
+</style>
+<html>
+<head>
+  <title>kvaish - directing</title>
+  <link rel="stylesheet" type="text/css"
+        href="gill-sans-mt-cufonfonts-webfont/style.css"/>
+</head>
+<div class="header">
+  <div class="name">
+    <a href="index.html" style="color:#000000;">
+      <img src="logo.png" style="width:50%;">
+      <img src="lamp.png" style="width:10%">
+    </a>
+  </div>
+  <div class="name">
+    <a href="about.html"> <h2>about</h2> </a>
+  </div>
+  <div class="name">
+    <a href="writing.html"> <h2>writing</h2> </a>
+  </div>
+  <div class="name">
+    <a href="directing.html" style="color:#ff8047;"> <h2>directing</h2> </a>
+  </div>
+  <div class="name">
+    <a href="resume.html"> <h2>resume</h2> </a>
+  </div>
+  <div class="name">
+    <a href="press.html"> <h2>press</h2> </a>
+  </div>
+  <div class="name">
+    <a href="contact.html"> <h2>contact</h2> </a>
+  </div>
+</div>
+<body style="background-color:#0f0f1a;color:#fbc5a2;font-family:'Gill Sans MT Book';font-weight:normal;">
+
+
+  <div class="main-container" style="font-family:'Gill Sans MT Book';font-weight:normal;text-align:left;">
+    <div class="item" id="writing">
+        <div style="white-space: nowrap;"><b><i>Daddy</i></b> (March 2021)</div>
+        Original TV sitcom pilot written by Shawn K. Jain<br>
+        Fresh Lime Soda Productions<br>
+        Featuring Hershel Tamboli, Nikita Tewani, Anooj Bhandari, Urja Jariwala, Rafael Marinho, and Samrat Chakrabarti<br>
+
+      <p style="color:#ff8047;">_______________________</p>
+
+
+        <div style="white-space: nowrap;"><b><i>Guards at the Taj</i></b> (October 2020)</div>
+        Soho Shakespeare Company<br>
+        Featuring Shahjehan Khan and Shawn K. Jain<br>
+        <br>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsohoshakes%2Fvideos%2F655434211761730%2F&show_text=false&width=560" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+
+      <p style="color:#ff8047;">_______________________</p>
+
+        <div style="white-space: nowrap;"><b><i>Guards at the Taj</i></b> (February 2017)</div>
+        Wellesley College Upstage<br>
+        Featuring Atiya Khan and Sabina Sethi Unni<br>
+        Photos by Julia Monaco<br>
+
+
+      <p style="color:#ff8047;">_______________________</p>
+        <div style="white-space: nowrap;"><b><i>Bengal Tiger at the Baghdad Zoo</i></b> (December 2015)</div>
+        Wellesley College Upstage<br>
+        Featuring Anjali Sundaram, Atiya Khan, Brigitte Demelo, Danielle Zarbin, Diana Lobontiu, Malak AlSayyad, and Maryam Mustafa<br>
+        Photos by Dina Al-Zu'bi<br>
+
+      <p style="color:#ff8047;">_______________________</p>
+</div>
+<div class="gallery">
+  <img src="./gallery-images/directing/bt1.jpg">
+  <img src="./gallery-images/directing/bt3.jpg">
+  <img src="./gallery-images/directing/bt4.jpg">
+  <img src="./gallery-images/directing/bt15.jpg">
+  <img src="./gallery-images/directing/bt18.jpg">
+  <img src="./gallery-images/directing/bt19.jpg">
+  <img src="./gallery-images/directing/bt20.jpg">
+  <img src="./gallery-images/directing/bt22.jpg">
+  <img src="./gallery-images/directing/bt23.jpg">
+  <img src="./gallery-images/directing/bt31.jpg">
+  <img src="./gallery-images/directing/bt35.jpg">
+  <img src="./gallery-images/directing/bt39.jpg">
+  <img src="./gallery-images/directing/bt41.jpg">
+  <img src="./gallery-images/directing/bt46.jpg">
+  <img src="./gallery-images/directing/bt49.jpg">
+  <img src="./gallery-images/directing/bt51.jpg">
+  <img src="./gallery-images/directing/bt52.jpg">
+  <img src="./gallery-images/directing/bt54.jpg">
+  <img src="./gallery-images/directing/bt55.jpg">
+  <img src="./gallery-images/directing/bt56.jpg">
+  <img src="./gallery-images/directing/bt61.jpg">
+  <img src="./gallery-images/directing/bt63.jpg">
+  <img src="./gallery-images/directing/bt64.jpg">
+  <img src="./gallery-images/directing/gt2.jpg">
+  <img src="./gallery-images/directing/gt4.jpg">
+  <img src="./gallery-images/directing/gt5.jpg">
+  <img src="./gallery-images/directing/gt6.jpg">
+  <img src="./gallery-images/directing/gt10.jpg">
+  <img src="./gallery-images/directing/gt11.jpg">
+  <img src="./gallery-images/directing/gt15.jpg">
+  <img src="./gallery-images/directing/gt16.jpg">
+  <img src="./gallery-images/directing/gt17.jpg">
+  <img src="./gallery-images/directing/gt20.jpg">
+  <img src="./gallery-images/directing/gt27.jpg">
+  <img src="./gallery-images/directing/gt30.jpg">
+</div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+  <br><br>
+</body>
+</html>
