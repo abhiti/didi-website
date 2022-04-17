@@ -132,6 +132,82 @@ a:hover {
   color: #ff8047;
 }
 
+/* ---------hover css----------- */
+.image {
+    position: relative;
+    width: 29vw;
+    margin: 2%;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    /* font-family: 'Quicksand', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image__description {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+}
+
+.image img{
+  margin:0;
+}
+
+/* ---------hover css----------- */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 </style>
 <html>
 <head>
@@ -141,9 +217,9 @@ a:hover {
 </head>
 <div class="header">
   <div class="name">
-    <a href="index.html" style="color:#000000;">
-      <img src="logo.png" style="width:50%;">
-      <img src="lamp.png" style="width:10%">
+    <a href="index.html" style="color:#000000;width:30vw;">
+      <img src="logo2.png" style="width:70%;">
+      <img src="lamp.png" style="width:5%">
     </a>
   </div>
   <div class="name">
@@ -156,7 +232,7 @@ a:hover {
     <a href="directing.html"> <h2>directing</h2> </a>
   </div>
   <div class="name">
-    <a href="resume.html"> <h2>resume</h2> </a>
+    <a href="acting.html"> <h2>acting</h2> </a>
   </div>
   <div class="name">
     <a href="press.html"> <h2>press</h2> </a>
@@ -170,6 +246,30 @@ a:hover {
 
   <div class="main-container" style="font-family:'Gill Sans MT Book';font-weight:normal;text-align:left;">
     <div class="item" id="writing">
+
+        <b><i>Nine Ways to Plead with a God</i></b>
+        <i>Full-length play / 3 W, 4 M, 1 NB</i>
+        Seven clueless tourists and one mysterious mountaineer attempt to climb Mount Darshan - a fictitious mountain (based on the real Mount Kailash) in the Himalayas, believed to be the abode of several Godly presences. Their physical limits, relationships to one another, and perceptions of reality are tested with each meter they climb, and as they become more desperate, pleading to God seems like their only option for survival.<br>
+        <br>
+        Performances scheduled for August 12 & 14, 2022<br>
+        Lenfest Center for the Arts<br>
+
+      <p style="color:#ff8047;">_______________________</p>
+
+        <b><i>Jyoti's Bridge</i></b>
+        <i>Full-length play / 1 W, 1 M, 1 NB</i>
+        Jyoti is stuck in a death-reincarnation limbo. Accompanied by Anirudh, who housed her soul in the previous life, Jyoti must confront each of her seven chakras in a series of dream-like memories, made more complex by the presence of her shape-shifting demon, Raakshas. Jyoti's Bridge is an existential crisis that attempts to explore transmigrated joy and trauma, seemingly inexplicable connections, and inner peace.<br>
+        <br>
+        November 19 & 20, 2021<br>
+        The Studio @ Schapiro (Columbia University)<br>
+        Directed by Phoebe Brooks<br>
+        Featuring Sanskar Agarwal, Saskia Naidoo, and Sheherazaad<br>
+        Photos by Phoebe Brooks<br>
+
+
+      <p style="color:#ff8047;">_______________________</p>
+
+
         <b><i>Meyer v. Malaysia</i></b>
         <i>Full-length play / 6 W, 5 M</i>
         Newly minted legal assistant Krish wants adventure. On a high-stakes, all-expenses-paid work trip to Paris for an international arbitration hearing, Krish realizes that law might not be the safe, boring profession she (and her parents) thought it was. Soon, she becomes enamoured with the drama, stakes, and potential danger involved in the job, and contemplates "selling out" after all.<br>
@@ -185,8 +285,14 @@ a:hover {
 
           <b><i>Old Boys</i></b>
           <i>Two-act musical / 5 M (with an ensemble of 5-7 people)</i>
+          Music and Additional Lyrics by Lucky Bommireddy<br>
           In the early 1980s, Prashant is given a scholarship to attend the Doon School, a British all-boys boarding school in northern India where students flush money down the toilet, shame those who do not speak perfect English, are deemed popular based on the number of Playboy magazines they smuggle into their dorms, bully those who take their studies too seriously, and haze those who do not date or are queer. Naïve Prashant must find a way to stay focused, maintain his integrity, and fulfill his parents' expectations as the family's "investment" without being seduced by the excitement of climbing social structures within the school. <br>
 
+      <p style="color:#ff8047;">_______________________</p>
+
+        <b><i>First Encounter</b></i>
+        <i>Three short plays / 6 W, 7 M</i>
+        In India...a thief confronts a snake guarding a box of family treasures. A young woman faces a moral crisis when she realizes that one of the cockroaches in her apartment is her grandmother reincarnated. A group of staff workers at a luxury safari lodge double as the troop of exotic animals white tourists have flocked to see.<br>
 
       <p style="color:#ff8047;">_______________________</p>
 
@@ -200,6 +306,11 @@ a:hover {
         <b><i>Ghost Play</i></b>
         <i>One-act play / 5 W, 5 M, 1 NB</i>
         Between her mother, two type-A lawyers, and major insecurities, can Rohini find a way to make herself happy? A love (?) story set in a courtroom in a parallel universe, this play considers the challenges young South Asian women face in today's dating world, unlearning how to please everyone but ourselves, and what we're really thinking when we ghost someone.<br>
+        <br>
+        February 14, 2020<br>
+        The Riverside Church<br>
+        Staged Reading directed by Sabina Sethi Unni<br>
+        Photos by Adri Tan<br>
 
       <p style="color:#ff8047;">_______________________</p>
 
@@ -252,14 +363,152 @@ a:hover {
           <i>Speech</i>
           A love letter to my alma mater.
         <br><br>
+        <p style="color:#ff8047;">_____________________________________________</p>
+        <br><br>
+
+
+
+
+</div>
+
+<div class="gallery">
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 1.jpeg" alt="jb 1">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 10.jpeg" alt="jb 10">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 2.jpeg" alt="jb 2">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 3.jpeg" alt="jb 3">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 4.jpeg" alt="jb 4">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 5.jpeg" alt="jb 5">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 6.jpeg" alt="jb 6">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 7.jpeg" alt="jb 7">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 8.jpeg" alt="jb 8">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/jyotis-bridge/jb 9.jpeg" alt="jb 9">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Jyoti's Bridge</i></div>
+          <p class="image__description">
+              The Studio @ Schapiro (Columbia University)
+          </p>
+      </div>
+  </div>
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/ghost-play/gp 1.jpg" alt="gp 1">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Ghost Play</i></div>
+          <p class="image__description">
+              Fresh Lime Soda Productions
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/ghost-play/gp 2.jpg" alt="gp 2">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Ghost Play</i></div>
+          <p class="image__description">
+              Fresh Lime Soda Productions
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/writing/ghost-play/gp 3.jpg" alt="gp 3">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Ghost Play</i></div>
+          <p class="image__description">
+              Fresh Lime Soda Productions
+          </p>
+      </div>
+  </div>
+
+
 
 </div>
 
 
 
-
-
     </div>
+
 
   </div>
   <br><br>

@@ -104,9 +104,9 @@
   margin: 2%;
 }
 
-.main-container .gallery img{
+/* .main-container .gallery img{
   height: 50vh;
-}
+} */
 
 .section {
   display: flex;
@@ -136,16 +136,88 @@ a:hover {
   color: #ff8047;
 }
 
+
+/* ---------hover css----------- */
+.image {
+    position: relative;
+    width: 29vw;
+    margin: 2%;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    /* font-family: 'Quicksand', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image__description {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+}
+
+.image img{
+  margin:0;
+}
+
+/* ---------hover css----------- */
 .gallery{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
+
+
 
 /* i {
   white-space: nowrap
 } */
+
+
 
 </style>
 <html>
@@ -156,9 +228,9 @@ a:hover {
 </head>
 <div class="header">
   <div class="name">
-    <a href="index.html" style="color:#000000;">
-      <img src="logo.png" style="width:50%;">
-      <img src="lamp.png" style="width:10%">
+    <a href="index.html" style="color:#000000;width:30vw;">
+      <img src="logo2.png" style="width:70%;">
+      <img src="lamp.png" style="width:5%">
     </a>
   </div>
   <div class="name">
@@ -171,7 +243,7 @@ a:hover {
     <a href="directing.html" style="color:#ff8047;"> <h2>directing</h2> </a>
   </div>
   <div class="name">
-    <a href="resume.html"> <h2>resume</h2> </a>
+    <a href="acting.html"> <h2>acting</h2> </a>
   </div>
   <div class="name">
     <a href="press.html"> <h2>press</h2> </a>
@@ -189,11 +261,6 @@ a:hover {
         Original full-length play by Anooj Bhandari<br>
         Fresh Lime Soda Productions<br>
         Featuring Nikita Lamba, Isa Hussain, Saahil Mehta, Sabina Sethi Unni, Rasti Syeda, Sanskar Agarwal, and Shahjehan Khan<br>
-        <div style="display: flex; flex-direction: row; width:100%; flex-wrap: wrap">
-          <img src="chaichai1.jpeg" style="width: 20vw">
-          <img src="chaichai2.jpeg" style="width: 20vw">
-          <img src="chaichai3.jpeg" style="width: 20vw">
-        </div>
 
 
       <p style="color:#ff8047;">_______________________</p>
@@ -202,9 +269,6 @@ a:hover {
         Original TV sitcom pilot by Shawn K. Jain<br>
         Fresh Lime Soda Productions<br>
         Featuring Hershel Tamboli, Nikita Tewani, Anooj Bhandari, Urja Jariwala, Rafael Marinho, and Samrat Chakrabarti<br>
-        <div style="display: flex; flex-direction: row; width:100%; flex-wrap: wrap">
-          <img src="daddy.jpeg" style="width: 20vw">
-        </div>
 
       <p style="color:#ff8047;">_______________________</p>
 
@@ -222,7 +286,7 @@ a:hover {
         Wellesley College Upstage<br>
         Featuring Atiya Khan and Sabina Sethi Unni<br>
         Photos by Julia Monaco<br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/48R85OuzybM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/48R85OuzybM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
       <p style="color:#ff8047;">_______________________</p>
@@ -230,46 +294,262 @@ a:hover {
         Wellesley College Upstage<br>
         Featuring Anjali Sundaram, Atiya Khan, Brigitte Demelo, Danielle Zarbin, Diana Lobontiu, Malak AlSayyad, and Maryam Mustafa<br>
         Photos by Dina Al-Zu'bi<br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOeoqwXAJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOeoqwXAJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
       <p style="color:#ff8047;">_______________________</p>
 </div>
+
 <div class="gallery">
-  <img src="./gallery-images/directing/bt1.jpg">
-  <img src="./gallery-images/directing/bt3.jpg">
-  <img src="./gallery-images/directing/bt4.jpg">
-  <img src="./gallery-images/directing/bt15.jpg">
-  <img src="./gallery-images/directing/bt18.jpg">
-  <img src="./gallery-images/directing/bt19.jpg">
-  <img src="./gallery-images/directing/bt20.jpg">
-  <img src="./gallery-images/directing/bt22.jpg">
-  <img src="./gallery-images/directing/bt23.jpg">
-  <img src="./gallery-images/directing/bt31.jpg">
-  <img src="./gallery-images/directing/bt35.jpg">
-  <img src="./gallery-images/directing/bt39.jpg">
-  <img src="./gallery-images/directing/bt41.jpg">
-  <img src="./gallery-images/directing/bt46.jpg">
-  <img src="./gallery-images/directing/bt49.jpg">
-  <img src="./gallery-images/directing/bt51.jpg">
-  <img src="./gallery-images/directing/bt52.jpg">
-  <img src="./gallery-images/directing/bt54.jpg">
-  <img src="./gallery-images/directing/bt55.jpg">
-  <img src="./gallery-images/directing/bt56.jpg">
-  <img src="./gallery-images/directing/bt61.jpg">
-  <img src="./gallery-images/directing/bt63.jpg">
-  <img src="./gallery-images/directing/bt64.jpg">
-  <img src="./gallery-images/directing/gt2.jpg">
-  <img src="./gallery-images/directing/gt4.jpg">
-  <img src="./gallery-images/directing/gt5.jpg">
-  <img src="./gallery-images/directing/gt6.jpg">
-  <img src="./gallery-images/directing/gt10.jpg">
-  <img src="./gallery-images/directing/gt11.jpg">
-  <img src="./gallery-images/directing/gt15.jpg">
-  <img src="./gallery-images/directing/gt16.jpg">
-  <img src="./gallery-images/directing/gt17.jpg">
-  <img src="./gallery-images/directing/gt20.jpg">
-  <img src="./gallery-images/directing/gt27.jpg">
-  <img src="./gallery-images/directing/gt30.jpg">
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt1.jpg" alt="bt1">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt18.jpg" alt="bt18">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt19.jpg" alt="bt19">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt20.jpg" alt="bt20">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt22.jpg" alt="bt22">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt3.jpg" alt="bt3">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt35.jpg" alt="bt35">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt4.jpg" alt="bt4">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt46.jpg" alt="bt46">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt49.jpg" alt="bt49">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt51.jpg" alt="bt51">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt52.jpg" alt="bt52">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt54.jpg" alt="bt54">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt56.jpg" alt="bt56">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/bengal-tiger/bt63.jpg" alt="bt63">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Bengal Tiger at the Baghdad Zoo</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt1.jpg" alt="gt1">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt10.jpg" alt="gt10">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt11.jpg" alt="gt11">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt15.jpg" alt="gt15">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt17.jpg" alt="gt17">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt2.jpg" alt="gt2">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt20.jpg" alt="gt20">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt27.jpg" alt="gt27">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt4.jpg" alt="gt4">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
+  <div class="image">
+      <img class="image__img" src="gallery-images/directing/guards-at-the-taj/gt5.jpg" alt="gt5">
+      <div class="image__overlay image__overlay--primary">
+          <div class="image__title"><i>Guards at the Taj</i></div>
+          <p class="image__description">
+              Wellesley College Upstage
+          </p>
+      </div>
+  </div>
+
 </div>
 
 
