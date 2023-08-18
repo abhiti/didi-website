@@ -36,10 +36,11 @@ def generate_gallery_html(dir_path, play_name, play_location):
 # print(generate_gallery_html(dir_path="gallery-images/directing/bengal-tiger", play_name="Bengal Tiger at the Baghdad Zoo", play_location='Wellesley College Upstage'))
 # print(generate_gallery_html(dir_path="gallery-images/directing/guards-at-the-taj", play_name="Guards at the Taj", play_location='Wellesley College Upstage'))
 
-print(generate_gallery_html(dir_path="gallery-images/acting/stand-up", play_name="Stand Up", play_location='Comedy Club Adams Morgan'),'\n\n\n')
-print(generate_gallery_html(dir_path="gallery-images/acting/for-molly", play_name="For Molly", play_location='Lenfest Center for the Arts'))
-print(generate_gallery_html(dir_path="gallery-images/acting/much-ado-about-nothing", play_name="Much Ado About Nothing", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
-print(generate_gallery_html(dir_path="gallery-images/acting/dumb-show", play_name="Dumb Show", play_location='Wellesley College Upstage'),'\n\n\n')
-print(generate_gallery_html(dir_path="gallery-images/acting/tempest", play_name="The Tempest", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
-print(generate_gallery_html(dir_path="gallery-images/acting/julius-caesar", play_name="Julius Caesar", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/acting/stand-up", play_name="Stand Up", play_location='Comedy Club Adams Morgan'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/acting/for-molly", play_name="For Molly", play_location='Lenfest Center for the Arts'))
+# print(generate_gallery_html(dir_path="gallery-images/acting/much-ado-about-nothing", play_name="Much Ado About Nothing", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/acting/dumb-show", play_name="Dumb Show", play_location='Wellesley College Upstage'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/acting/tempest", play_name="The Tempest", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/acting/julius-caesar", play_name="Julius Caesar", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
+print(generate_gallery_html(dir_path="gallery-images/writing/nine-ways", play_name="Nine Ways to Plead With a God", play_location='Lenfest Center for the Arts'),'\n\n\n')
 #python3 directory.py > out.html
