@@ -44,7 +44,8 @@ def generate_gallery_html(dir_path, play_name, play_location):
 # print(generate_gallery_html(dir_path="gallery-images/acting/julius-caesar", play_name="Julius Caesar", play_location='Wellesley College Shakespeare Society'),'\n\n\n')
 #print(generate_gallery_html(dir_path="gallery-images/writing/nine-ways", play_name="Nine Ways to Plead With a God", play_location='Lenfest Center for the Arts'),'\n\n\n')
 #print(generate_gallery_html(dir_path="gallery-images/directing/eight-one-eight-two", play_name="Eight One Eight Two", play_location='The Chain Theatre'),'\n\n\n')
-print(generate_gallery_html(dir_path="gallery-images/directing/let-me-speak-2022", play_name="Let Me Speak 2022", play_location='Wellesley College'),'\n\n\n')
+# print(generate_gallery_html(dir_path="gallery-images/directing/let-me-speak-2022", play_name="Let Me Speak 2022", play_location='Wellesley College'),'\n\n\n')
+print(generate_gallery_html(dir_path="gallery-images/directing/3s4w", play_name="Three Sisters, Four Women", play_location='The Flea Theater'),'\n\n\n')
 
 
 # $ cd /Users/abhiti/Dropbox/Family/DidiSite
